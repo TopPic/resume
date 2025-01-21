@@ -24,7 +24,7 @@ body {
 }
 
 .bg-main {
-  background-image: url(../../public/images/px.jpg);
+  background-image: url(/images/px.jpg);
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
