@@ -80,7 +80,7 @@ export default function Home() {
         <div className="grid gird-cols-1 sm:grid-cols-2 mt-10 px-5 sm:px-0 gap-4">
           <div className="flex flex-col">
             <p className="font-semibold text-3xl flex justify-center items-center uppercase">
-              <span className=" border-b-4 border-b-blue-500">About </span>
+              <span className=" border-b-4 border-b-blue-500">Title </span>
             </p>
             <p className="text-center text-gray-400 font-light">
               t.wanitcharoennan@gamil.com
@@ -106,17 +106,15 @@ export default function Home() {
           </div>
         </div>
         {/* Skill */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 mt-10 px-5 sm:px-0">
+        <div className="grid grid-cols-1 sm:grid-cols-3 mt-10 px-5 sm:px-0 gap-4">
           <div className="flex flex-col">
             <p className="font-semibold text-3xl flex justify-center items-center uppercase">
               <span className=" border-b-4 border-b-blue-500">Title</span>
             </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
-              eveniet vel quidem expedita maiores maxime consequuntur facilis
-              animi consectetur eaque in harum officia blanditiis tempore unde,
-              sed voluptatum possimus dolorum?
-            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
           </div>
 
           <div className="flex flex-col">
@@ -144,7 +142,58 @@ export default function Home() {
           </div>
         </div>
       </div>
-
+      <footer className="bg-neutral-900 w-full">
+        <div className="grid grid-cols-1 sm:grid-cols-1 mt-5 p-5">
+          <div className="flex space-x-3 justify-center">
+            <a href="#">
+              <Image
+                aria-hidden
+                src="/images/facebook.png"
+                alt="facebook icon"
+                width={32}
+                height={32}
+              />
+            </a>
+            <a href="#">
+              <Image
+                aria-hidden
+                src="/images/line.png"
+                alt="line icon"
+                width={32}
+                height={32}
+              />
+            </a>
+            <a href="#">
+              <Image
+                aria-hidden
+                src="/images/instagram.png"
+                alt="instagram icon"
+                width={32}
+                height={32}
+              />
+            </a>
+            <a href="#">
+              <Image
+                aria-hidden
+                src="/images/linkedin.png"
+                alt="linkedin icon"
+                width={32}
+                height={32}
+              />
+            </a>
+            <a href="#">
+              <Image
+                aria-hidden
+                src="/images/github-sign.png"
+                alt="github icon"
+                width={32}
+                height={32}
+              />
+            </a>
+          </div>
+            <p className="text-center pt-3">© 2025 topic 2025</p>
+        </div>
+      </footer>
       {/* <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
         <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
