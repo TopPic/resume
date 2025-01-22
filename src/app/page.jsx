@@ -8,7 +8,7 @@ export default function Home() {
         <div className="container mx-auto">
           <div className="grid grid-cols-1 sm:grid-cols-2">
             <div className="tracking-wider">
-              <h1 className="uppercase text-center sm:text-left text-3xl sm:text-4xl lg:text-5xl">
+              <h1 className="uppercase text-center sm:text-left text-3xl sm:text-4xl lg:text-5xl text-yellow-400">
                 What is Lorem Ipsum
               </h1>
               <h2 className="font-extrabold uppercase text-center sm:text-left text-xl sm:text-2xl lg:text-5xl">
@@ -80,7 +80,7 @@ export default function Home() {
         <div className="grid gird-cols-1 sm:grid-cols-2 mt-10 px-5 sm:px-0 gap-4">
           <div className="flex flex-col">
             <p className="font-semibold text-3xl flex justify-center items-center uppercase">
-              <span className=" border-b-4 border-b-blue-500">Title </span>
+              <span className=" border-b-4 border-b-blue-500 text-yellow-400">Aubot</span>
             </p>
             <p className="text-center text-gray-400 font-light">
               t.wanitcharoennan@gamil.com
@@ -109,17 +109,99 @@ export default function Home() {
         <div className="grid grid-cols-1 sm:grid-cols-3 mt-10 px-5 sm:px-0 gap-4">
           <div className="flex flex-col">
             <p className="font-semibold text-3xl flex justify-center items-center uppercase">
-              <span className=" border-b-4 border-b-blue-500">Title</span>
+              <span className=" border-b-4 border-b-blue-500 text-yellow-400">Skill</span>
             </p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+            <h4 className="text-2xl uppercase mt-10">Coding Skill </h4>
+            <div className="grid grid-cols-2 sm:grid-cols-2 font-extralight">
+              <p className="indent-0 sm:indent-5">HTML</p>
+              <p className="text-">Good</p>
+            </div>
+            <div className="grid grid-cols-2 sm:grid-cols-2 font-extralight">
+              <p className="indent-0 sm:indent-5">Css</p>
+              <p>Good</p>
+            </div>
+            <div className="grid grid-cols-2 sm:grid-cols-2 font-extralight">
+              <p className="indent-0 sm:indent-5">Bootstrap Framework</p>
+              <p>Good</p>
+            </div>
+            <div className="grid grid-cols-2 sm:grid-cols-2 font-extralight">
+              <p className="indent-0 sm:indent-5">JavaScript</p>
+              <p>Basic & Learning</p>
+            </div>
+
+            <div className="grid grid-cols-2 sm:grid-cols-2 font-extralight">
+              <p className="indent-0 sm:indent-5">Tailwind CSS</p>
+              <p>Learning</p>
+            </div>
+            <div className="grid grid-cols-2 sm:grid-cols-2 font-extralight">
+              <p className="indent-0 sm:indent-5">Next.js</p>
+              <p>Learning</p>
+            </div>
+            <h4 className="text-2xl uppercase pt-3">Design Skill</h4>
+            <div className="grid grid-cols-2 sm:grid-cols-2 font-extralight">
+              <p className="indent-0 sm:indent-5">Figma</p>
+              <p>working level & Learning</p>
+            </div>
+            <div className="grid grid-cols-2 sm:grid-cols-2 font-extralight">
+              <p className="indent-0 sm:indent-5">Photoshop</p>
+              <p>working level</p>
+            </div>
+            <h4 className="text-2xl uppercase pt-3">CMS Skill</h4>
+            <div className="grid grid-cols-2 sm:grid-cols-2 font-extralight" >
+              <p className="indent-0 sm:indent-5">Wordpress</p>
+              <p>Good</p>
+            </div>
+            <h4 className="text-2xl uppercase pt-3">Other Skill</h4>
+            <div className="grid grid-cols-2 sm:grid-cols-2 font-extralight">
+              <p className="indent-0 sm:indent-5">Search Engine Optimize</p>
+              <p>Good</p>
+            </div>
+            <div className="grid grid-cols-2 sm:grid-cols-2 font-extralight">
+              <p className="indent-0 sm:indent-5">Google analytic</p>
+              <p>Good</p>
+            </div>
+            <div className="grid grid-cols-2 sm:grid-cols-2 font-extralight">
+              <p className="indent-0 sm:indent-5">Google Tagmanager</p>
+              <p>Good</p>
+            </div>
+            <h4 className="text-2xl uppercase pt-3">Personal Skill</h4>
+            <div className="grid grid-cols-2 sm:grid-cols-2 font-extralight">
+              <p className="indent-0 sm:indent-5">Team Work</p>
+              <p>Good</p>
+            </div>
+            <div className="grid grid-cols-2 sm:grid-cols-2 font-extralight">
+              <p className="indent-0 sm:indent-5">Communication</p>
+              <p>Good</p>
+            </div>
+            <div className="grid grid-cols-2 sm:grid-cols-2 font-extralight">
+              <p className="indent-0 sm:indent-5">Interpersonal</p>
+              <p>Good</p>
+            </div>
+            <div className="grid grid-cols-2 sm:grid-cols-2 font-extralight">
+              <p className="indent-0 sm:indent-5">Problem-Solving</p>
+              <p>Good</p>
+            </div>
+            <div className="grid grid-cols-2 sm:grid-cols-2 font-extralight">
+              <p className="indent-0 sm:indent-5">Time Management</p>
+              <p>Good</p>
+            </div>
+            <div className="grid grid-cols-2 sm:grid-cols-2 font-extralight">
+              <p className="indent-0 sm:indent-5">Adaptability</p>
+              <p>Good</p>
+            </div>
+            <div className="grid grid-cols-2 sm:grid-cols-2 font-extralight">
+              <p className="indent-0 sm:indent-5">Creativity</p>
+              <p>Good</p>
+            </div>
+            <div className="grid grid-cols-2 sm:grid-cols-2 font-extralight">
+              <p className="indent-0 sm:indent-5">Self-Discipline</p>
+              <p>Good</p>
+            </div>
           </div>
 
           <div className="flex flex-col">
             <p className="font-semibold text-3xl flex justify-center items-center uppercase">
-              <span className=" border-b-4 border-b-blue-500">Title</span>
+              <span className=" border-b-4 border-b-blue-500 text-yellow-400">Experience</span>
             </p>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
@@ -131,7 +213,7 @@ export default function Home() {
 
           <div className="flex flex-col">
             <p className="font-semibold text-3xl flex justify-center items-center uppercase">
-              <span className=" border-b-4 border-b-blue-500">Title</span>
+              <span className=" border-b-4 border-b-blue-500 text-yellow-400">Title</span>
             </p>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
@@ -191,7 +273,7 @@ export default function Home() {
               />
             </a>
           </div>
-            <p className="text-center pt-3">© 2025 topic 2025</p>
+          <p className="text-center pt-3">© 2025 topic 2025</p>
         </div>
       </footer>
       {/* <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
