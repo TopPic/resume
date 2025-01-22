@@ -1,7 +1,11 @@
-import React from "react";
+'use client';
+import React, { useState } from "react";
 import Image from "next/image";
-import Link from "next/link";
+import {pp, job, Sailian} from "./component/sweetalert"
+
+
 export default function Home() {
+
   return (
     <>
       <div className="bg-main h-screen flex justify-center items-center">
@@ -111,63 +115,63 @@ export default function Home() {
             <p className="font-semibold text-3xl flex justify-center items-center uppercase">
               <span className=" border-b-4 border-b-blue-500 text-yellow-400">Skill</span>
             </p>
-            <h4 className="text-2xl uppercase mt-10">Coding Skill </h4>
+            <h4 className="text-2xl uppercase mt-10 text-orange-500 font-extrabold">Coding Skill </h4>
             <div className="grid grid-cols-2 sm:grid-cols-2 font-extralight">
               <p className="indent-0 sm:indent-5">HTML</p>
-              <p className="text-">Good</p>
+              <p className="text-right sm:text-left">Good</p>
             </div>
             <div className="grid grid-cols-2 sm:grid-cols-2 font-extralight">
               <p className="indent-0 sm:indent-5">Css</p>
-              <p>Good</p>
+              <p className="text-right sm:text-left">Good</p>
             </div>
             <div className="grid grid-cols-2 sm:grid-cols-2 font-extralight">
               <p className="indent-0 sm:indent-5">Bootstrap Framework</p>
-              <p>Good</p>
+              <p className="text-right sm:text-left">Good</p>
             </div>
             <div className="grid grid-cols-2 sm:grid-cols-2 font-extralight">
               <p className="indent-0 sm:indent-5">JavaScript</p>
-              <p>Basic & Learning</p>
+              <p className="text-right sm:text-left">Basic & Learning</p>
             </div>
 
             <div className="grid grid-cols-2 sm:grid-cols-2 font-extralight">
               <p className="indent-0 sm:indent-5">Tailwind CSS</p>
-              <p>Learning</p>
+              <p className="text-right sm:text-left">Learning</p>
             </div>
             <div className="grid grid-cols-2 sm:grid-cols-2 font-extralight">
               <p className="indent-0 sm:indent-5">Next.js</p>
-              <p>Learning</p>
+              <p className="text-right sm:text-left">Learning</p>
             </div>
-            <h4 className="text-2xl uppercase pt-3">Design Skill</h4>
+            <h4 className="text-2xl uppercase pt-3 text-orange-500 font-extrabold">Design Skill</h4>
             <div className="grid grid-cols-2 sm:grid-cols-2 font-extralight">
               <p className="indent-0 sm:indent-5">Figma</p>
-              <p>working level & Learning</p>
+              <p className="text-right sm:text-left">working level & Learning</p>
             </div>
             <div className="grid grid-cols-2 sm:grid-cols-2 font-extralight">
               <p className="indent-0 sm:indent-5">Photoshop</p>
-              <p>working level</p>
+              <p className="text-right sm:text-left">working level</p>
             </div>
-            <h4 className="text-2xl uppercase pt-3">CMS Skill</h4>
+            <h4 className="text-2xl uppercase pt-3 text-orange-500 font-extrabold">CMS Skill</h4>
             <div className="grid grid-cols-2 sm:grid-cols-2 font-extralight" >
               <p className="indent-0 sm:indent-5">Wordpress</p>
-              <p>Good</p>
+              <p className="text-right sm:text-left">Good</p>
             </div>
-            <h4 className="text-2xl uppercase pt-3">Other Skill</h4>
+            <h4 className="text-2xl uppercase pt-3 text-orange-500 font-extrabold">Other Skill</h4>
             <div className="grid grid-cols-2 sm:grid-cols-2 font-extralight">
               <p className="indent-0 sm:indent-5">Search Engine Optimize</p>
-              <p>Good</p>
+              <p className="text-right sm:text-left">Good</p>
             </div>
             <div className="grid grid-cols-2 sm:grid-cols-2 font-extralight">
               <p className="indent-0 sm:indent-5">Google analytic</p>
-              <p>Good</p>
+              <p className="text-right sm:text-left">Good</p>
             </div>
             <div className="grid grid-cols-2 sm:grid-cols-2 font-extralight">
               <p className="indent-0 sm:indent-5">Google Tagmanager</p>
-              <p>Good</p>
+              <p className="text-right sm:text-left">Good</p>
             </div>
-            <h4 className="text-2xl uppercase pt-3">Personal Skill</h4>
+            <h4 className="text-2xl uppercase pt-3 text-orange-500 font-extrabold">Personal Skill</h4>
             <div className="grid grid-cols-2 sm:grid-cols-2 font-extralight">
               <p className="indent-0 sm:indent-5">Team Work</p>
-              <p>Good</p>
+              <p className="text-right sm:text-left">Good</p>
             </div>
             <div className="grid grid-cols-2 sm:grid-cols-2 font-extralight">
               <p className="indent-0 sm:indent-5">Communication</p>
@@ -175,27 +179,27 @@ export default function Home() {
             </div>
             <div className="grid grid-cols-2 sm:grid-cols-2 font-extralight">
               <p className="indent-0 sm:indent-5">Interpersonal</p>
-              <p>Good</p>
+              <p className="text-right sm:text-left">Good</p>
             </div>
             <div className="grid grid-cols-2 sm:grid-cols-2 font-extralight">
               <p className="indent-0 sm:indent-5">Problem-Solving</p>
-              <p>Good</p>
+              <p className="text-right sm:text-left">Good</p>
             </div>
             <div className="grid grid-cols-2 sm:grid-cols-2 font-extralight">
               <p className="indent-0 sm:indent-5">Time Management</p>
-              <p>Good</p>
+              <p className="text-right sm:text-left">Good</p>
             </div>
             <div className="grid grid-cols-2 sm:grid-cols-2 font-extralight">
               <p className="indent-0 sm:indent-5">Adaptability</p>
-              <p>Good</p>
+              <p className="text-right sm:text-left">Good</p>
             </div>
             <div className="grid grid-cols-2 sm:grid-cols-2 font-extralight">
               <p className="indent-0 sm:indent-5">Creativity</p>
-              <p>Good</p>
+              <p className="text-right sm:text-left">Good</p>
             </div>
             <div className="grid grid-cols-2 sm:grid-cols-2 font-extralight">
               <p className="indent-0 sm:indent-5">Self-Discipline</p>
-              <p>Good</p>
+              <p className="text-right sm:text-left">Good</p>
             </div>
           </div>
 
@@ -203,12 +207,25 @@ export default function Home() {
             <p className="font-semibold text-3xl flex justify-center items-center uppercase">
               <span className=" border-b-4 border-b-blue-500 text-yellow-400">Experience</span>
             </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
-              eveniet vel quidem expedita maiores maxime consequuntur facilis
-              animi consectetur eaque in harum officia blanditiis tempore unde,
-              sed voluptatum possimus dolorum?
-            </p>
+            <div className="h-40 border-2 border-yellow-400 relative p-2 mt-10 hover:scale-95 duration-300 cursor-pointer" onClick={pp}>
+              <div className="absolute top-0 right-0 p-2">03 </div>
+              <div className="pb-8 text-2xl text-orange-500 font-extrabold">Jun 2018 - Present</div>
+              <p>Senior Webmaster</p>
+              <p className="font-extralight italic">Playpark Company Limited</p>
+            </div>
+            <div className="h-40 border-2 border-yellow-400 relative p-2 mt-10 hover:scale-95 duration-300 cursor-pointer" onClick={job}>
+              <div className="absolute top-0 right-0 p-2">02 </div>
+              <div className="pb-8 text-2xl text-orange-500 font-extrabold">Nov 2018 - May 2019</div>
+              <p>web creative</p>
+              <p className="font-extralight italic">JOBBKK.COM</p>
+            </div>
+            <div className="h-40 border-2 border-yellow-400 relative p-2 mt-10 hover:scale-95 duration-300 cursor-pointer" onClick={Sailian}>
+              <div className="absolute top-0 right-0 p-2">01 </div>
+              <div className="pb-8 text-2xl text-orange-500 font-extrabold">Jul 2018 - Nov 2018</div>
+              <p>Graphic Web Designer</p>
+              <p className="font-extralight italic">Sailian Media</p>
+            </div>
+
           </div>
 
           <div className="flex flex-col">
@@ -276,53 +293,7 @@ export default function Home() {
           <p className="text-center pt-3">© 2025 topic 2025</p>
         </div>
       </footer>
-      {/* <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer> */}
+
     </>
   );
 }

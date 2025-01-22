@@ -31,6 +31,15 @@ body {
   width: 100%;
   /* height: 100vh; */
 }
-.name{
+
+.name {
   font-size: 100px;
+}
+
+.swal2-html-container {
+  text-align: left !important;
+}
+
+.swal2-html-container ul li {
+  list-style: circle;
 }
