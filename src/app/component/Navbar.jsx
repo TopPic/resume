@@ -53,11 +53,7 @@ function Navbar() {
           </Link>
         </div>
         <div className="lg:hidden flex justify-between w-full">
-          <button
-            className="ml-auto p-5"
-            id="hamburger"
-            onClick={toggleMenu}
-          >
+          <button className="ml-auto p-5 text-4xl" id="hamburger" onClick={toggleMenu}>
             ☰
           </button>
           <div
