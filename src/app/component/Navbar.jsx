@@ -59,7 +59,7 @@ function Navbar() {
           <div
             id="menu"
             className={`${
-              isMenuOpen ? "absolute top-[48px] left-0 w-full bg-neutral-800" : "hidden"
+              isMenuOpen ? "absolute top-[78px] left-0 w-full bg-neutral-800" : "hidden"
             } flex flex-col space-y-4 p-4 z-10 transition-all duration-300 ease-in-out`}
           >
             <a href="#home" className="text-white"  onClick={(e) => handleSmoothScroll(e, "home")}>Home</a>
