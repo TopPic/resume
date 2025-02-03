@@ -64,7 +64,7 @@ export default function Home() {
 
   return (
     <>
-      <div className="bg-main h-screen flex justify-center items-center">
+      <div className="bg-main h-screen flex justify-center items-center" id="home">
         <div className="container mx-auto">
           <div className="grid grid-cols-1 ">
             <div className="tracking-wider p-5">
@@ -148,7 +148,7 @@ export default function Home() {
         </div>
       </div>
       {/* About */}
-      <div className="">
+      <div className="" id="about">
         <p
           className="px-20 pt-10 text-2xl flex items-center justify-center sm:justify-start"
           data-aos="fade-up"
