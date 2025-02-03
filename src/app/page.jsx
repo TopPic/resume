@@ -1,71 +1,65 @@
-'use client';
+"use client";
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
-import { pp, job, Sailian } from "./component/sweetalert"
-import styles from "./styles/Title.module.css"
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import SplitType from 'split-type';
-import Lenis from '@studio-freight/lenis';
+import { pp, job, Sailian } from "./component/sweetalert";
+import styles from "./styles/Title.module.css";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import SplitType from "split-type";
+import Lenis from "@studio-freight/lenis";
 import AOS from "aos";
-import "aos/dist/aos.css"; // 
-
+import "aos/dist/aos.css"; //
 
 export default function Home() {
-
-
-
   useEffect(() => {
-
     AOS.init({
       // duration: 1000, // ความเร็วของอนิเมชัน (ในหน่วย ms)
-      once: false,     // ให้อนิเมชันทำงานครั้งเดียว (true) หรือทำซ้ำ (false)
+      once: false, // ให้อนิเมชันทำงานครั้งเดียว (true) หรือทำซ้ำ (false)
     });
 
+    gsap.registerPlugin(ScrollTrigger);
 
-    gsap.registerPlugin(ScrollTrigger)
-
-    const splitTypes = document.querySelectorAll('.reveal-type')
+    const splitTypes = document.querySelectorAll(".reveal-type");
 
     splitTypes.forEach((char, i) => {
+      const bg = char.dataset.bgColor;
+      const fg = char.dataset.fgColor;
 
-      const bg = char.dataset.bgColor
-      const fg = char.dataset.fgColor
+      const text = new SplitType(char, { types: "chars" });
 
-      const text = new SplitType(char, { types: 'chars' })
-
-      gsap.fromTo(text.chars,
+      gsap.fromTo(
+        text.chars,
         {
-          color: fg,  // เปลี่ยนเป็นสี foreground ก่อน
+          color: fg, // เปลี่ยนเป็นสี foreground ก่อน
         },
         {
-          color: bg,  // แล้วเปลี่ยนเป็นสีพื้นหลัง
+          color: bg, // แล้วเปลี่ยนเป็นสีพื้นหลัง
           duration: 0.3,
           stagger: 0.02,
           scrollTrigger: {
             trigger: char,
-            start: 'top 80%',
-            end: 'top 20%',
+            start: "top 80%",
+            end: "top 20%",
             scrub: true,
             markers: false,
-            toggleActions: 'play play reverse reverse'
-          }
-        })
-    })
+            toggleActions: "play play reverse reverse",
+          },
+        }
+      );
+    });
 
+    const lenis = new Lenis();
 
-    const lenis = new Lenis()
-
-    lenis.on('scroll', (e) => {
-      console.log(e)
-    })
+    lenis.on("scroll", (e) => {
+      console.log(e);
+    });
 
     function raf(time) {
-      lenis.raf(time)
-      requestAnimationFrame(raf)
+      lenis.raf(time);
+      requestAnimationFrame(raf);
     }
 
-    requestAnimationFrame(raf)
+    requestAnimationFrame(raf);
   }, []);
 
   return (
@@ -74,12 +68,19 @@ export default function Home() {
         <div className="container mx-auto">
           <div className="grid grid-cols-1 ">
             <div className="tracking-wider p-5">
-              <p className="font-normal text-xl text-center sm:text-left" data-aos="fade-up" data-aos-duration="1500">
-                Portfolio <br />
-                & Resume
+              <p
+                className="font-normal text-xl text-center sm:text-left"
+                data-aos="fade-up"
+                data-aos-duration="1500"
+              >
+                Portfolio <br />& Resume
               </p>
 
-              <p className="uppercase text-white font-extralight text-[1.5rem] md:text-[3rem] lg:text-[7rem] text-center sm:text-left" data-aos="fade-up" data-aos-duration="3000">
+              <p
+                className="uppercase text-white font-extralight text-[1.5rem] md:text-[3rem] lg:text-[7rem] text-center sm:text-left"
+                data-aos="fade-up"
+                data-aos-duration="3000"
+              >
                 Thanyaporn Wanitcharoennan
               </p>
               {/* <p className="uppercase text-center sm:text-left text-3xl sm:text-4xl lg:text-[10rem] text-white font-extralight mt-36">
@@ -148,22 +149,45 @@ export default function Home() {
       </div>
       {/* About */}
       <div className="">
-        <p className="px-20 pt-10 text-2xl flex items-center justify-center sm:justify-start" data-aos="fade-up" data-aos-duration="1500">
+        <p
+          className="px-20 pt-10 text-2xl flex items-center justify-center sm:justify-start"
+          data-aos="fade-up"
+          data-aos-duration="1500"
+        >
           About
-          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#fff" viewBox="0 0 256 256"><path d="M200,88V192a8,8,0,0,1-8,8H88a8,8,0,0,1,0-16h84.69L58.34,69.66A8,8,0,0,1,69.66,58.34L184,172.69V88a8,8,0,0,1,16,0Z"></path></svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            fill="#fff"
+            viewBox="0 0 256 256"
+          >
+            <path d="M200,88V192a8,8,0,0,1-8,8H88a8,8,0,0,1,0-16h84.69L58.34,69.66A8,8,0,0,1,69.66,58.34L184,172.69V88a8,8,0,0,1,16,0Z"></path>
+          </svg>
           {/* <FontAwesomeIcon icon={faArrowRight} className="ml-2 text-blue-500" /> */}
         </p>
       </div>
 
       <div className="container mx-auto">
-
-        <div className={`${styles.section} section  text-[1.5rem] md:text-[3rem] lg:text-[7rem] p-5 py-10 `}>
-          <p className="reveal-type text-[1.5rem] md:text-[3rem] lg:text-[7rem] font-extralight" data-bg-color="#fff" data-fg-color="#404142">Passionate about web development with 7+ years of experience.</p>
+        <div
+          className={`${styles.section} section  text-[1.5rem] md:text-[3rem] lg:text-[7rem] p-5 py-10 `}
+        >
+          <p
+            className="reveal-type text-[1.5rem] md:text-[3rem] lg:text-[7rem] font-extralight"
+            data-bg-color="#fff"
+            data-fg-color="#404142"
+          >
+            Passionate about web development with 7+ years of experience.
+          </p>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 px-5 sm:px-10 lg:px-20 mt-10 relative">
           {/* Section Image */}
-          <div className="flex justify-center sm:justify-start" data-aos="fade-up" data-aos-duration="1500">
+          <div
+            className="flex justify-center sm:justify-start"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+          >
             <Image
               aria-hidden
               src="/images/main_photo.jpg"
@@ -175,20 +199,21 @@ export default function Home() {
           </div>
 
           {/* Section Content */}
-          <div className="bg-neutral-600 text-white p-6 sm:p-10 shadow-lg sm:max-w-[500px] sm:absolute sm:right-[25%] sm:top-[20%] lg:top-[30%]" data-aos="fade-up" data-aos-duration="2000">
-            <h3 className="text-3xl sm:text-4xl font-bold mb-4">Thanyapoen</h3>
+          <div
+            className="bg-neutral-600 text-white p-6 sm:p-10 shadow-lg sm:max-w-[500px] sm:absolute sm:right-[25%] sm:top-[20%] lg:top-[30%]"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          >
+            <h3 className="text-3xl sm:text-4xl font-bold mb-4">
+              Thanyapoen Wanitcharoennan
+            </h3>
             <p className="text-neutral-300 text-sm sm:text-md leading-relaxed">
-            I am passionate about website development and have over 7 years of
-              experience in this field. Currently, I work as a Senior Web
-              Master, where I am responsible for overseeing and managing
-              websites to ensure their efficiency. This includes aspects of
-              design, development, and maintenance. In addition to website
-              development, I have a strong interest in Software Testing, which
-              plays a crucial role in enhancing the quality of systems and
-              applications. With my experience and determination to continuously
-              improve, I am committed to delivering high-quality work that adds
-              value to organizations. I am also eager to exchange ideas and
-              embrace new learning opportunities.
+              I have over 7 years of experience in website development and
+              currently work as a Senior Web Master, managing the development
+              and maintenance of gaming websites using WordPress. I’m also
+              interested in Software Testing because it helps improve the
+              quality of systems. I’m committed to learning new things and
+              delivering work that brings value to organizations.
             </p>
           </div>
         </div>
@@ -376,7 +401,6 @@ export default function Home() {
           <p className="text-center pt-3">© 2025 topic 2025</p>
         </div>
       </footer>
-
     </>
   );
 }
