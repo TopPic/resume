@@ -1,6 +1,8 @@
 // import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "./component/Navbar";
+import Carousel from "./component/Carousel";
+
 // const geistSans = Geist({
 //   variable: "--font-geist-sans",
 //   subsets: ["latin"],
@@ -11,17 +13,18 @@ import Navbar from "./component/Navbar";
 //   subsets: ["latin"],
 // });
 
-
 export const metadata = {
-  title: "Resume",
-  description: "I am passionate about website development and have over 7 years of experience in this field",
+  title: "Test",
+  description:
+    "I am passionate about website development and have over 7 years of experience in this field",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <Navbar/>
+        {/* <Navbar/> */}
+        <Carousel />
         {children}
       </body>
     </html>
